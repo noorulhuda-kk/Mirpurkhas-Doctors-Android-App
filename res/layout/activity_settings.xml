@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/teal4Blue1"
+    tools:context=".Settings">
+
+    <TextView
+        android:id="@+id/titleProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        android:textColor="@color/white"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:layout_marginBottom="0dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="@color/teal2Blue3"
+        android:id="@+id/rows"
+        android:padding="10dp">
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/contact_Image"
+            android:background="@color/teal2Blue3"
+            android:scaleType="centerInside"
+            android:contentDescription="Contact Image"
+            android:src="@drawable/doctor"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="11dp"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textName"
+                android:text="Name"
+                android:textColor="@color/teal5Blue0"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/textDemographics"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/teal5Blue0"
+                android:text="Demographics"
+                android:textSize="16sp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textContact"
+                android:textColor="@color/teal5Blue0"
+                android:text="Contact"
+                android:textSize="16sp"
+                />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    <!-- Setting -->
+    <TextView
+        android:id="@+id/titleSetting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Setting"
+        android:textColor="@color/white"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        android:textSize="38sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="0dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonPersonalDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:textColor="@color/teal4Blue1"
+        android:layout_weight="1"
+        android:text="Change Personal Detail"
+        android:layout_marginBottom="16dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonProfilePicture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:textColor="@color/teal4Blue1"
+        android:layout_weight="1"
+        android:text="Update Profile Picture"
+        android:layout_marginBottom="16dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonContactInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:textColor="@color/teal4Blue1"
+        android:layout_weight="1"
+        android:text="Change Contact Info"
+        android:layout_marginBottom="16dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonChangePassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:textColor="@color/teal4Blue1"
+        android:layout_weight="1"
+        android:text="Change Password"
+        android:layout_marginBottom="16dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonLOgOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:textColor="@color/teal4Blue1"
+        android:layout_weight="1"
+        android:text="Log out"
+        android:layout_marginBottom="16dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonDeleteAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:textColor="@color/teal4Blue1"
+        android:layout_weight="1"
+        android:text="Delete Account"
+        android:layout_marginBottom="16dp"/>
+
+
+</LinearLayout>

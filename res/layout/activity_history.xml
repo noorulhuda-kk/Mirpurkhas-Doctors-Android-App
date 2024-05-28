@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal3Blue2"
+    android:orientation="vertical"
+    tools:context=".History">
+
+    <TextView
+        android:id="@+id/titleUpcomingAppointments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upcoming Appointments"
+        android:textColor="@color/white"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:layout_margin="10dp"
+        android:background="@color/teal2Blue3"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:text="Appoitnment A1" ></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:text="Appoitnment A2" ></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:text="Appoitnment A3" ></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:text="Appoitnment A4" ></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:text="Appoitnment A5" ></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:text="Appoitnment A6" ></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:text="Appoitnment A7" ></TextView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/titleCompletedAppointments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Completed Appointments"
+        android:textColor="@color/white"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:layout_margin="10dp"
+        android:background="@color/teal2Blue3"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:text="Appoitnment B1" ></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:text="Appoitnment B2" ></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:text="Appoitnment B3" ></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:text="Appoitnment B4" ></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:text="Appoitnment B5" ></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:text="Appoitnment B6" ></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:text="Appoitnment B7" ></TextView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/titleCancelledAppointments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancelled Appointments"
+        android:textColor="@color/white"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:layout_margin="10dp"
+        android:background="@color/teal2Blue3"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:text="Appoitnment C1" ></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:text="Appoitnment C2" ></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:text="Appoitnment C3" ></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:text="Appoitnment C4" ></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:text="Appoitnment C5" ></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:text="Appoitnment C6" ></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:text="Appoitnment C7" ></TextView>
+    </LinearLayout>
+
+</LinearLayout>

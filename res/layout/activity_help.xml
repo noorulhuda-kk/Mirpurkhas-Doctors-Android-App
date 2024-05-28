@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="16dp"
+    tools:context=".Help">
+
+    <ImageView
+        android:id="@+id/appLogo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/logo"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <!-- Language Buttons -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLangUrdu"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/teal2Blue3"
+            android:text="Urdu"
+            android:layout_margin="4dp"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLangEnglish"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/teal2Blue3"
+            android:text="English"
+            android:layout_margin="4dp"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLangSindhi"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/teal2Blue3"
+            android:text="Sindhi"
+            android:layout_margin="4dp"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- About the Application -->
+            <TextView
+                android:id="@+id/textTitleAboutApp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How to Use the App"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/textAboutApp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:background="@color/teal3Blue2"
+                android:text=" Text-based tutorial\n [link for video based tutorial]"/>
+
+
+            <!-- Frequently Asked Questions -->
+            <TextView
+                android:id="@+id/textFAQtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Frequently Asked Questions"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/textQ1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Pehla Sawaal"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_marginTop="3dp"/>
+
+            <TextView
+                android:id="@+id/textA1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="Pehla Jawaab"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

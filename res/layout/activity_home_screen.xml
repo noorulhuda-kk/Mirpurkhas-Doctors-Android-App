@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".homeScreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+            <!-- this is for whitespece-->
+        </LinearLayout>
+
+
+
+
+        <ImageButton
+            android:id="@+id/imageButtonHelp"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:tooltipText="Help"
+            app:srcCompat="@drawable/help"
+            android:scaleType="fitCenter"
+            />
+
+        <ImageButton
+            android:id="@+id/imageButtonHistory"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:tooltipText="History"
+            app:srcCompat="@drawable/historyyy"
+            android:scaleType="fitCenter"
+            />
+
+        <ImageButton
+            android:id="@+id/imageButtonSetting"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:tooltipText="Setting"
+            app:srcCompat="@drawable/usersetting"
+            android:scaleType="fitCenter"
+            />
+    </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="18dp"
+       android:orientation="horizontal"
+       android:layout_marginEnd="10dp"
+       >
+
+       <TextView
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="2"
+       />
+
+       <TextView
+           android:layout_width="30dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:textAlignment="center"
+           android:text="Help       "
+       />
+       <TextView
+           android:layout_width="30dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:textAlignment="center"
+           android:text="History"
+           />
+       <TextView
+           android:layout_width="30dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:textAlignment="center"
+           android:text="Profile"
+           />
+
+
+   </LinearLayout>
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchview"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="8dp"
+        app:queryHint="Search by Doctor/Specialization"
+        app:iconifiedByDefault="false"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        >
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="384dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="16dp"
+            android:hint="Location"
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            >
+            <AutoCompleteTextView
+                android:id="@+id/dropdown1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="384dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="16dp"
+            android:hint="Specialization"
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            >
+            <AutoCompleteTextView
+                android:id="@+id/dropdown2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recy1"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>
